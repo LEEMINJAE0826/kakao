@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오톡 메세지</title>
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+
+<body>
+
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"
+        integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4"
+        crossorigin="anonymous"></script>
+    <script>
+        Kakao.init('719e3839c19bb224aa2ded37b24ddb6c'); // 사용하려는 앱의 JavaScript 키 입력
+    </script>
+
+    <a id="kakaotalk-sharing-btn" href="javascript:;">
+        <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+            alt="카카오톡 공유 보내기 버튼" />
+    </a>
+
+    <script>
+        Kakao.Share.createDefaultButton({
+            container: '#kakaotalk-sharing-btn',
+            objectType: 'feed',
+            content: {
+                title: '이은호군의 첫 번째 생일',
+                description: '저희 부부에게 큰 보물이 되어준 은호가 첫 생일을 맞이하게 되었습니다.',
+                imageUrl:
+                    'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+                link: {
+                    // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
+                    mobileWebUrl: 'https://eunhofirstbirthday.netlify.app',
+                    webUrl: 'https://eunhofirstbirthday.netlify.app',
+                },
+            },
+            // social: {
+            //   likeCount: 286,
+            //   commentCount: 45,
+            //   sharedCount: 845,
+            // },
+            buttons: [
+                {
+                    title: '초대장 보기',
+                    link: {
+                        mobileWebUrl: 'https://developers.kakao.com',
+                        webUrl: 'https://developers.kakao.com',
+                    },
+                },
+                //   {
+                //     title: '앱으로 보기',
+                //     link: {
+                //       mobileWebUrl: 'https://developers.kakao.com',
+                //       webUrl: 'https://developers.kakao.com',
+                //     },
+                //   },
+            ],
+        });
+    </script>
+</body>
+
+</html>
