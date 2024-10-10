@@ -24,50 +24,41 @@
     </a>
 
     <script>
-        // Kakao.Share.createDefaultButton({
-        //     container: '#kakaotalk-sharing-btn',
-        //     objectType: 'location',
-        //     address: '경남 창원시 성산구 원이대로 332 1층 블루핀',
-        //     addressTitle: '그랜드 머큐어 앰배서더',
-        //     content: {
-        //         title: '이은호군의 첫 번째 생일',
-        //         description: '저희 부부에게 큰 보물이 되어준 은호가 첫 생일을 맞이하게 되었습니다.',
-        //         imageUrl:
-        //             'https://eunhofirstbirthday.netlify.app/img_thumbnail.png',
-        //         link: {
-        //             // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
-        //             mobileWebUrl: 'https://eunhofirstbirthday.netlify.app',
-        //             webUrl: 'https://eunhofirstbirthday.netlify.app',
-        //         },
-        //     },
-        //     // social: {
-        //     //   likeCount: 286,
-        //     //   commentCount: 45,
-        //     //   sharedCount: 845,
-        //     // },
-        //     buttons: [
-        //         {
-        //             title: '초대장 보기',
-        //             link: {
-        //                 mobileWebUrl: 'https://developers.kakao.com',
-        //                 webUrl: 'https://developers.kakao.com',
-        //             },
-        //         },
-        //         //   {
-        //         //     title: '앱으로 보기',
-        //         //     link: {
-        //         //       mobileWebUrl: 'https://developers.kakao.com',
-        //         //       webUrl: 'https://developers.kakao.com',
-        //         //     },
-        //         //   },
-        //     ],
-        // });
+        Kakao.Share.createDefaultButton({
+            container: '#kakaotalk-sharing-btn',
+            objectType: 'location',
+            address: '경남 창원시 성산구 원이대로 332 1층 블루핀',
+            addressTitle: '그랜드 머큐어 앰배서더',
+            content: {
+                title: '이은호군의 첫 번째 생일',
+                description: '저희 부부에게 큰 보물이 되어준 은호가 첫 생일을 맞이하게 되었습니다.',
+                imageUrl:
+                    'https://eunhofirstbirthday.netlify.app/img_thumbnail.png',
+                link: {
+                    // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
+                    mobileWebUrl: 'https://eunhofirstbirthday.netlify.app',
+                    webUrl: 'https://eunhofirstbirthday.netlify.app',
+                },
+            },
+           
+            buttons: [
+                {
+                    title: '초대장 보기',
+                    link: {
+                        mobileWebUrl: 'https://developers.kakao.com',
+                        webUrl: 'https://developers.kakao.com',
+                    },
+                },
+                  {
+                    title: '위치 보기',
+                    link: {
+                      mobileWebUrl: 'https://m.map.kakao.com/actions/searchView?q=%EA%B2%BD%EB%82%A8%20%EC%B0%BD%EC%9B%90%EC%8B%9C%20%EC%84%B1%EC%82%B0%EA%B5%AC%20%EC%9B%90%EC%9D%B4%EB%8C%80%EB%A1%9C%20332%201%EC%B8%B5%20%EB%B8%94%EB%A3%A8%ED%95%80&wxEnc=LVSOTP&wyEnc=QNLTTMN&lvl=4#!/XPPSTS,LWQOPP/map/place',
+                      webUrl: 'https://m.map.kakao.com/actions/searchView?q=%EA%B2%BD%EB%82%A8%20%EC%B0%BD%EC%9B%90%EC%8B%9C%20%EC%84%B1%EC%82%B0%EA%B5%AC%20%EC%9B%90%EC%9D%B4%EB%8C%80%EB%A1%9C%20332%201%EC%B8%B5%20%EB%B8%94%EB%A3%A8%ED%95%80&wxEnc=LVSOTP&wyEnc=QNLTTMN&lvl=4#!/XPPSTS,LWQOPP/map/place',
+                    },
+                  },
+            ],
+        });
 
-        Kakao.Share.createScrapButton({
-  container: '#kakaotalk-sharing-btn',
-  requestUrl: 'https://developers.kakao.com',
-  templateId: ${1133715},
-});
     </script>
 </body>
 
